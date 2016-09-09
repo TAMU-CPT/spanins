@@ -1,3 +1,16 @@
-from django.shortcuts import render
+# from django.shortcuts import render
+from rest_framework import viewsets, filters
+from base.serializers import HostSerializer, SpaninSerializer, PhageSerializer
+from base.models import Host, Spanin, Phage
 
-# Create your views here.
+class HostViewSet(viewsets.ModelViewSet):
+    queryset = Host.objects.all()
+    serializer_class = HostSerializer
+
+class SpaninViewSet(viewsets.ModelViewSet):
+    queryset = Spanin.objects.all()
+    serializer_class = SpaninSerializer
+
+class PhageViewSet(viewsets.ModelViewSet):
+    queryset = Phage.objects.all()
+    serializer_class = PhageSerializer

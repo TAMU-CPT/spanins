@@ -1,4 +1,4 @@
-FROM python:1.7-alpine
+FROM python:2.7-alpine
 ADD requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN pip --no-cache-dir install -r requirements.txt && \

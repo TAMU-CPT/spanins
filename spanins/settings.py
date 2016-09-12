@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
-    'PAGE_SIZE': 10
+    'PAGE_SIZE': 100,
 }
 
 MIDDLEWARE = [

@@ -12,6 +12,10 @@ class SpaninSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('id', 'sequence', 'accession')
 
 class PhageSerializer(serializers.HyperlinkedModelSerializer):
+    host=HostSerializer(read_only=True, allow_null=True)
+    i_spanin=SpaninSerializer(read_only=True, allow_null=True)
+    o_spanin=SpaninSerializer(read_only=True, allow_null=True)
+    u_spanin=SpaninSerializer(read_only=True, allow_null=True)
     class Meta:
         model = Phage
         fields = ('id', 'host', 'name', 'accession', 'spanin_type', 'i_spanin', 'o_spanin', 'u_spanin')

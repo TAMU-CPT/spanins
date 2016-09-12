@@ -13,4 +13,4 @@ ENV DJANGO_SETTINGS_MODULE=spanins.production \
 	ALLOWED_HOSTS="*" \
 	CORS_ORIGINS="cpt.tamu.edu"
 USER django
-ENTRYPOINT ["/app/docker-entrypoint.sh"]
+CMD ["/app/docker-entrypoint.sh"]

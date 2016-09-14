@@ -3,3 +3,5 @@ djangorestframework
 markdown
 django-filter
 django-cors-middleware
+django-haystack
+whoosh

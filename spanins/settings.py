@@ -25,7 +25,7 @@ SECRET_KEY = '4490x2+mq*63@+7cnu(4e-7&w=gs8a3*r9o_qrh8rt(o1$nf+9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost:8080').split(',')
 
 
 # Application definition
@@ -39,9 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'base',
     'rest_framework',
+    'corsheaders',
+    'haystack',
+    'whoosh',
 ]
 
 REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'base.pagination.CustomPagination',
     'PAGE_SIZE': 100,
 }
 
@@ -55,6 +59,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ORIGIN_WHITELIST = os.environ.get('CORS_ORIGINS', 'localhost:8080').split(',')
 
 ROOT_URLCONF = 'spanins.urls'
 
@@ -76,6 +82,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'spanins.wsgi.application'
 
+import os
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
+    },
+}
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases

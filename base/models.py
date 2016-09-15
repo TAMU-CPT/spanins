@@ -29,3 +29,8 @@ class Phage(models.Model):
     i_spanin = models.ForeignKey(Spanin, related_name="i_spanin", null=True)
     o_spanin = models.ForeignKey(Spanin, related_name="o_spanin", null=True)
     u_spanin = models.ForeignKey(Spanin, related_name="u_spanin", null=True)
+
+    def accession_mod(self):
+        a = self.accession.replace('_', '')
+        a = a.replace('.', '')
+        return a

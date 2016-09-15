@@ -16,10 +16,12 @@ class PhageViewSet(viewsets.ModelViewSet):
     serializer_class = PhageSerializer
 
     def get_queryset(self):
-        search = self.request.query_params.get('search[value]', None)
+        search = self.request.query_params.get('search', None)
         if not search:
             queryset = Phage.objects.all()
         else:
+            search = search.replace('_', '')
+            search = search.replace('.', '')
             queryset = SearchQuerySet().autocomplete(text=search)
             queryset = [p.object for p in queryset]
         return queryset

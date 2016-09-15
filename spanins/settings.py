@@ -45,8 +45,8 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'base.pagination.CustomPagination',
-    'PAGE_SIZE': 100,
+    # 'DEFAULT_PAGINATION_CLASS': 'my_project.apps.core.pagination.CustomPagination',
+    'PAGE_SIZE': 10,
 }
 
 MIDDLEWARE = [
@@ -85,7 +85,8 @@ WSGI_APPLICATION = 'spanins.wsgi.application'
 import os
 HAYSTACK_CONNECTIONS = {
     'default': {
-        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'ENGINE': 'spanins.search_backends.CustomWhooshEngine',
+        # 'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
         'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
     },
 }

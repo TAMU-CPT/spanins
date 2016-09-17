@@ -17,11 +17,17 @@ class PhageViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         search = self.request.query_params.get('search', None)
+        spanin_type = self.request.query_params.get('spanin_type', None)
         if not search:
-            queryset = Phage.objects.all()
+            search = 'pppw'
+            queryset = SearchQuerySet().autocomplete(text=search)
+            # queryset = Phage.objects.all()
         else:
             search = search.replace('_', '')
             search = search.replace('.', '')
-            queryset = SearchQuerySet().autocomplete(text=search)
+            if spanin_type:
+                queryset = SearchQuerySet().autocomplete(text=search).filter(spanin_type=int(spanin_type))
+            else:
+                queryset = SearchQuerySet().autocomplete(text=search)
             queryset = [p.object for p in queryset]
         return queryset

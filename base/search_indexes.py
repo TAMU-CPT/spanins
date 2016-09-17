@@ -3,6 +3,7 @@ from base.models import Phage
 
 class PhageIndex(indexes.SearchIndex, indexes.Indexable):
     text = indexes.NgramField(document=True, use_template=True)
+    spanin_type = indexes.IntegerField(model_attr='spanin_type')
 
     def get_model(self):
         return Phage

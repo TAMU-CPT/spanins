@@ -29,14 +29,16 @@ class Command(BaseCommand):
                 )
 
                 i_spanin, created = Spanin.objects.get_or_create(
-                    sequence=row[12],
+                    sequence=row[13],
                     accession=row[9],
+                    gene_name=row[10],
                     sd_sequence=row[11]
                 )
 
                 o_spanin, created = Spanin.objects.get_or_create(
-                    sequence=row[23],
+                    sequence=row[24],
                     accession=row[20],
+                    gene_name=row[21],
                     sd_sequence=row[22]
                 )
 

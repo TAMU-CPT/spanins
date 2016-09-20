@@ -9,7 +9,7 @@ class HostSerializer(serializers.HyperlinkedModelSerializer):
 class SpaninSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Spanin
-        fields = ('id', 'sequence', 'accession')
+        fields = ('id', 'sequence', 'gene_name', 'accession')
 
 class PhageSerializer(serializers.HyperlinkedModelSerializer):
     host=HostSerializer(read_only=True, allow_null=True)

@@ -18,6 +18,7 @@ class Spanin(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     sequence = models.TextField()
     accession = models.CharField(max_length=64)
+    gene_name = models.CharField(max_length=64)
     sd_sequence = models.TextField(blank=True, null=True)
 
 class Phage(models.Model):

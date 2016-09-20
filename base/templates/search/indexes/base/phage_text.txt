@@ -1,2 +1,2 @@
+{{ object.host.name}}
 {{ object.name }}
-{{ object.accession_mod }}

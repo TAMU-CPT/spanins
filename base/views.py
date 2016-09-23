@@ -1,8 +1,12 @@
 # from django.shortcuts import render
 from haystack.query import SearchQuerySet
 from rest_framework import viewsets
-from base.serializers import HostSerializer, SpaninSerializer, PhageSerializer
+import string
+from rest_framework.renderers import JSONRenderer
+from rest_framework.decorators import api_view, renderer_classes
+from rest_framework.response import Response
 from base.models import Host, Spanin, Phage
+from base.serializers import HostSerializer, SpaninSerializer, PhageSerializer
 
 class HostViewSet(viewsets.ModelViewSet):
     queryset = Host.objects.all()
@@ -33,3 +37,40 @@ class PhageViewSet(viewsets.ModelViewSet):
                 queryset = SearchQuerySet().autocomplete(text=search).order_by('name')
             queryset = [p.object for p in queryset]
         return queryset
+
+@api_view(['GET'])
+@renderer_classes((JSONRenderer,))
+def spanin_freq(request):
+    """
+    AGGAGGT is the ideal Shine-Dalgarno sequence.
+    This is a crude frequency map of SD sequences among different spanin types.
+        eis, eos: embedded i/o spanins
+        ois, oos: overlapping i/o spanins
+        sis, sos: separated i/o spanins
+        us:       unimolecular spanins
+    """
+
+    # predetermined sequences. Will add more later.
+    sds = ['AGGAGGT',
+        'GGAGGT', 'AGGAGG',
+        'GAGGT', 'GGAGG', 'AGGAG',
+        'AGGT', 'GAGG', 'GGAG', 'AGGA',
+        'GGT', 'AGG', 'GAG', 'GGA']
+
+    freq = {key:{'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0} for key in sds}
+
+    spanins = Spanin.objects.all()
+    for spanin in spanins:
+        sd = str(spanin.sd_sequence)
+        sd = sd.translate(None, string.ascii_lowercase)
+        if spanin.accession == '331028055' or len(sd) < 3:
+            continue
+        if sd in freq:
+            freq[sd][spanin.type_code] += 1
+        # else:
+            # freq[sd] = {'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0}
+
+    # for sd in sds:
+        # print sd, freq[sd]
+    # print json.dumps(freq)
+    return Response(freq)

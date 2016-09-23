@@ -24,6 +24,8 @@ class Command(BaseCommand):
                     print 'empty or header'
                     continue
 
+                st = str.lower(row[4][0])
+
                 host, created = Host.objects.get_or_create(
                     name=row[8],
                 )
@@ -32,6 +34,7 @@ class Command(BaseCommand):
                     sequence=row[13],
                     accession=row[9],
                     gene_name=row[10],
+                    type_code=st + 'is',
                     sd_sequence=row[11]
                 )
 
@@ -39,6 +42,7 @@ class Command(BaseCommand):
                     sequence=row[24],
                     accession=row[20],
                     gene_name=row[21],
+                    type_code=st + 'os',
                     sd_sequence=row[22]
                 )
 
@@ -46,7 +50,7 @@ class Command(BaseCommand):
                     host=host,
                     name=row[0],
                     accession=row[2],
-                    spanin_type=spanin_type[str.lower(row[4][0])],
+                    spanin_type=spanin_type[st],
                     i_spanin=i_spanin,
                     o_spanin=o_spanin
                 )

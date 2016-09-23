@@ -19,6 +19,8 @@ class Spanin(models.Model):
     sequence = models.TextField()
     accession = models.CharField(max_length=64)
     gene_name = models.CharField(max_length=64)
+    type_code = models.CharField(max_length=8)
+    score = models.IntegerField(default=0)
     sd_sequence = models.TextField(blank=True, null=True)
 
 class Phage(models.Model):

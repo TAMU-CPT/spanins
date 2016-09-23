@@ -25,6 +25,7 @@ class Command(BaseCommand):
                     sequence=row[10],
                     accession=row[6],
                     gene_name=row[7],
+                    type_code='us',
                     sd_sequence=row[8]
                 )
 

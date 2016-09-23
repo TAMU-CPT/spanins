@@ -1,7 +1,7 @@
 import django
 import string
-# import sys
 import os
+import json
 
 from django.core.wsgi import get_wsgi_application
 
@@ -41,5 +41,6 @@ for spanin in spanins:
     # else:
         # freq[sd] = {'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0}
 
-for sd in sds:
-    print sd, freq[sd]
+# for sd in sds:
+    # print sd, freq[sd]
+print json.dumps(freq)

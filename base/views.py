@@ -51,11 +51,25 @@ def spanin_freq(request):
     """
 
     # predetermined sequences. Will add more later.
-    sds = ['AGGAGGT',
-        'GGAGGT', 'AGGAGG',
-        'GAGGT', 'GGAGG', 'AGGAG',
-        'AGGT', 'GAGG', 'GGAG', 'AGGA',
-        'GGT', 'AGG', 'GAG', 'GGA']
+    sds = ['AGGAGGT', #18
+           'GGAGGT',  #16
+           'AGGAGG',  #16
+           'GGGGGG',  #14
+           'GGAGG',   #14
+           'GGGGG',   #13
+           'GAGGT',   #13
+           'AGGAG',   #13
+           'GAGG',    #11
+           'GGAG',    #11
+           'AGGT',    #10
+           'AGGA',    #10
+           'GGGG',    #10
+           'GGT',     #8
+           'AGG',     #8
+           'GAG',     #8
+           'GGA',     #8
+           'GGG'      #7
+           ]
 
     freq = {key:{'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0} for key in sds}
 
@@ -70,7 +84,4 @@ def spanin_freq(request):
         # else:
             # freq[sd] = {'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0}
 
-    # for sd in sds:
-        # print sd, freq[sd]
-    # print json.dumps(freq)
     return Response(freq)

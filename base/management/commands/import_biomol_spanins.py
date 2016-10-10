@@ -21,7 +21,6 @@ class Command(BaseCommand):
             csvreader = csv.reader(csvfile, delimiter=',', quotechar='"')
             for i, row in enumerate(csvreader):
                 if i == 0 or not row[0]:
-                    print 'empty or header'
                     continue
 
                 st = str.lower(row[4][0])

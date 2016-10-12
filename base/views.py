@@ -50,7 +50,7 @@ def spanin_freq(request):
         us:       unimolecular spanins
     """
 
-    # predetermined sequences. Will add more later.
+    # predetermined sequences.
     sds = ['AGGAGGT', #18
            'GGAGGT',  #16
            'AGGAGG',  #16
@@ -68,20 +68,78 @@ def spanin_freq(request):
            'AGG',     #8
            'GAG',     #8
            'GGA',     #8
-           'GGG'      #7
+           'GGG',     #7
+           ''
            ]
+
+    freq = {key:{'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0} for key in sds}
+
+    count = 0
+    spanins = Spanin.objects.all()
+    for spanin in spanins:
+        sd = str(spanin.sd_sequence).strip()
+        # flag for ignoring spanin
+        if '*' in sd:
+            continue
+        sd = sd.translate(None, string.ascii_lowercase)
+        if sd in freq:
+            freq[sd][spanin.type_code] += 1
+        else:
+            count += 1
+            # freq[sd] = {'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0}
+            # freq[sd][spanin.type_code] += 1
+
+    print "*******"
+    print count
+    print "*******"
+    return Response(freq)
+
+@api_view(['GET'])
+@renderer_classes((JSONRenderer,))
+def spanin_score(request):
+    sds = {
+        18: ['AGGAGGT'],
+        16: ['GGAGGT', 'AGGAGG'],
+        14: ['GGGGGG', 'GGAGG'],
+        13: ['GGGGG', 'GAGGT', 'AGGAG'],
+        11: ['GAGG', 'GGAG'],
+        10: ['AGGT', 'AGGA', 'GGGG'],
+        8: ['GGT', 'AGG', 'GAG', 'GGA'],
+        7: ['GGG'],
+        0: [''],
+    }
 
     freq = {key:{'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0} for key in sds}
 
     spanins = Spanin.objects.all()
     for spanin in spanins:
-        sd = str(spanin.sd_sequence)
-        sd = sd.translate(None, string.ascii_lowercase)
-        if spanin.accession == '331028055' or len(sd) < 3:
+        sd = str(spanin.sd_sequence).strip()
+        # flag for ignoring spanin
+        if '*' in sd:
             continue
-        if sd in freq:
-            freq[sd][spanin.type_code] += 1
-        # else:
-            # freq[sd] = {'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0}
+        sd = sd.translate(None, string.ascii_lowercase)
+        for key in sds:
+            if sd in sds[key]:
+                freq[key][spanin.type_code] += 1
 
     return Response(freq)
+
+@api_view(['GET'])
+@renderer_classes((JSONRenderer,))
+def chord_plot(request):
+    scores = {}
+    phages = Phage.objects.all()
+    for phage in phages:
+        # print '*******'
+        # print phage.spanin_type
+        # print request.query_params[]
+        # print '*******'
+        if phage.spanin_type == int(request.query_params['type']):
+
+            sc = str((phage.i_spanin.spanin_score(), phage.o_spanin.spanin_score()))
+            if sc in scores:
+                scores[sc] += 1
+            else:
+                scores[sc] = 1
+
+    return Response(scores)

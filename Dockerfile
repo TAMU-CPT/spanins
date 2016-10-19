@@ -10,7 +10,9 @@ RUN chown -R django /app
 # Port to expose
 EXPOSE 8000
 ENV DJANGO_SETTINGS_MODULE=spanins.production \
+	DJANGO_URL_PREFIX="spanindb/" \
 	ALLOWED_HOSTS="*" \
 	CORS_ORIGINS="cpt.tamu.edu"
+
 USER django
 CMD ["/app/docker-entrypoint.sh"]

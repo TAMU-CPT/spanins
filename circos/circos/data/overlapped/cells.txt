@@ -1,76 +1,38 @@
-cell_0000 18o 10 12 color=color18o_a1,z=6
-cell_0000 13i 50 52 color=color18o_a1,z=6
-cell_0001 18o 0 10 color=color18o_a1,z=32
-cell_0001 11i 15 25 color=color18o_a1,z=32
-cell_0002 16o 2 3 color=color16o_a1,z=3
-cell_0002 16i 7 8 color=color16o_a1,z=3
-cell_0003 16o 0 2 color=color16o_a1,z=6
-cell_0003 13i 48 50 color=color16o_a1,z=6
-cell_0004 16o 3 4 color=color16o_a1,z=3
-cell_0004 8i 39 40 color=color16o_a1,z=3
-cell_0005 14o 13 14 color=color14o_a1,z=3
-cell_0005 16i 6 7 color=color14o_a1,z=3
-cell_0006 14o 12 13 color=color14o_a1,z=3
-cell_0006 13i 47 48 color=color14o_a1,z=3
-cell_0007 14o 0 12 color=color14o_a1,z=39
-cell_0007 10i 35 47 color=color14o_a1,z=39
-cell_0008 13o 58 59 color=color13o_a1,z=3
-cell_0008 16i 5 6 color=color13o_a1,z=3
-cell_0009 13o 55 58 color=color13o_a1,z=10
-cell_0009 14i 0 3 color=color13o_a1,z=10
-cell_0010 13o 24 55 color=color13o_a1,z=100
-cell_0010 13i 16 47 color=color13o_a1,z=100
-cell_0011 13o 21 24 color=color13o_a1,z=10
-cell_0011 11i 12 15 color=color13o_a1,z=10
-cell_0012 13o 1 21 color=color13o_a1,z=65
-cell_0012 10i 15 35 color=color13o_a1,z=65
-cell_0013 13o 60 66 color=color13o_a1,z=19
-cell_0013 8i 33 39 color=color13o_a1,z=19
-cell_0014 13o 59 60 color=color13o_a1,z=3
-cell_0014 7i 2 3 color=color13o_a1,z=3
-cell_0015 13o 0 1 color=color13o_a1,z=3
-cell_0015 0i 5 6 color=color13o_a1,z=3
-cell_0016 11o 33 35 color=color11o_a1,z=6
-cell_0016 18i 0 2 color=color11o_a1,z=6
-cell_0017 11o 30 33 color=color11o_a1,z=10
-cell_0017 16i 2 5 color=color11o_a1,z=10
-cell_0018 11o 17 30 color=color11o_a1,z=42
-cell_0018 13i 3 16 color=color11o_a1,z=42
-cell_0019 11o 10 17 color=color11o_a1,z=23
-cell_0019 11i 5 12 color=color11o_a1,z=23
-cell_0020 11o 3 10 color=color11o_a1,z=23
-cell_0020 10i 8 15 color=color11o_a1,z=23
-cell_0021 11o 37 63 color=color11o_a1,z=84
-cell_0021 8i 7 33 color=color11o_a1,z=84
-cell_0022 11o 35 37 color=color11o_a1,z=6
-cell_0022 7i 0 2 color=color11o_a1,z=6
-cell_0023 11o 0 3 color=color11o_a1,z=10
-cell_0023 0i 2 5 color=color11o_a1,z=10
-cell_0024 10o 15 17 color=color10o_a1,z=6
-cell_0024 16i 0 2 color=color10o_a1,z=6
-cell_0025 10o 12 15 color=color10o_a1,z=10
-cell_0025 13i 0 3 color=color10o_a1,z=10
-cell_0026 10o 7 12 color=color10o_a1,z=16
-cell_0026 11i 0 5 color=color10o_a1,z=16
-cell_0027 10o 2 7 color=color10o_a1,z=16
-cell_0027 10i 3 8 color=color10o_a1,z=16
-cell_0028 10o 17 20 color=color10o_a1,z=10
-cell_0028 8i 4 7 color=color10o_a1,z=10
-cell_0029 10o 0 2 color=color10o_a1,z=6
-cell_0029 0i 0 2 color=color10o_a1,z=6
-cell_0030 8o 33 34 color=color8o_a1,z=3
-cell_0030 16i 8 9 color=color8o_a1,z=3
-cell_0031 8o 27 33 color=color8o_a1,z=19
-cell_0031 13i 52 58 color=color8o_a1,z=19
-cell_0032 8o 16 27 color=color8o_a1,z=35
-cell_0032 11i 25 36 color=color8o_a1,z=35
-cell_0033 8o 1 16 color=color8o_a1,z=48
-cell_0033 10i 47 62 color=color8o_a1,z=48
-cell_0034 8o 34 41 color=color8o_a1,z=23
-cell_0034 8i 40 47 color=color8o_a1,z=23
-cell_0035 8o 0 1 color=color8o_a1,z=3
-cell_0035 0i 6 7 color=color8o_a1,z=3
-cell_0036 0o 0 3 color=color0o_a1,z=10
-cell_0036 10i 0 3 color=color0o_a1,z=10
-cell_0037 0o 3 7 color=color0o_a1,z=13
-cell_0037 8i 0 4 color=color0o_a1,z=13
+18o 10 12 13i 50 52 color=color18o_a1,z=6
+18o 0 10 11i 15 25 color=color18o_a1,z=32
+16o 2 3 16i 7 8 color=color16o_a1,z=3
+16o 0 2 13i 48 50 color=color16o_a1,z=6
+16o 3 4 8i 39 40 color=color16o_a1,z=3
+14o 13 14 16i 6 7 color=color14o_a1,z=3
+14o 12 13 13i 47 48 color=color14o_a1,z=3
+14o 0 12 10i 35 47 color=color14o_a1,z=39
+13o 58 59 16i 5 6 color=color13o_a1,z=3
+13o 55 58 14i 0 3 color=color13o_a1,z=10
+13o 24 55 13i 16 47 color=color13o_a1,z=100
+13o 21 24 11i 12 15 color=color13o_a1,z=10
+13o 1 21 10i 15 35 color=color13o_a1,z=65
+13o 60 66 8i 33 39 color=color13o_a1,z=19
+13o 59 60 7i 2 3 color=color13o_a1,z=3
+13o 0 1 0i 5 6 color=color13o_a1,z=3
+11o 33 35 18i 0 2 color=color11o_a1,z=6
+11o 30 33 16i 2 5 color=color11o_a1,z=10
+11o 17 30 13i 3 16 color=color11o_a1,z=42
+11o 10 17 11i 5 12 color=color11o_a1,z=23
+11o 3 10 10i 8 15 color=color11o_a1,z=23
+11o 37 63 8i 7 33 color=color11o_a1,z=84
+11o 35 37 7i 0 2 color=color11o_a1,z=6
+11o 0 3 0i 2 5 color=color11o_a1,z=10
+10o 15 17 16i 0 2 color=color10o_a1,z=6
+10o 12 15 13i 0 3 color=color10o_a1,z=10
+10o 7 12 11i 0 5 color=color10o_a1,z=16
+10o 2 7 10i 3 8 color=color10o_a1,z=16
+10o 17 20 8i 4 7 color=color10o_a1,z=10
+10o 0 2 0i 0 2 color=color10o_a1,z=6
+8o 33 34 16i 8 9 color=color8o_a1,z=3
+8o 27 33 13i 52 58 color=color8o_a1,z=19
+8o 16 27 11i 25 36 color=color8o_a1,z=35
+8o 1 16 10i 47 62 color=color8o_a1,z=48
+8o 34 41 8i 40 47 color=color8o_a1,z=23
+8o 0 1 0i 6 7 color=color8o_a1,z=3
+0o 0 3 10i 0 3 color=color0o_a1,z=10
+0o 3 7 8i 0 4 color=color0o_a1,z=13

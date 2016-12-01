@@ -23,3 +23,5 @@ RUN python manage.py update_index
 
 # Drop permissions
 USER django
+
+ENTRYPOINT ["/app/.docker-entrypoint.sh"]

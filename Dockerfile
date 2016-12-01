@@ -10,6 +10,7 @@ WORKDIR /app/
 
 
 ENV DJANGO_SETTINGS_MODULE=spanins.production \
+	DJANGO_WSGI_MODULE=spanins.wsgi \
 	DJANGO_URL_PREFIX="spanindb/" \
 	ALLOWED_HOSTS="*" \
 	CORS_ORIGINS="cpt.tamu.edu"

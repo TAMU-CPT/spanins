@@ -18,5 +18,7 @@ ENV DJANGO_SETTINGS_MODULE=spanins.production \
 	ALLOWED_HOSTS="*" \
 	CORS_ORIGINS="cpt.tamu.edu"
 
+RUN python manage.py update_index
+
 # Drop permissions
 USER django

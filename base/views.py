@@ -80,12 +80,14 @@ def spanin_freq(request):
         sd = str(spanin.sd_sequence).strip()
         # flag for ignoring spanin
         if '*' in sd:
+            count += 1
             continue
         sd = sd.translate(None, string.ascii_lowercase)
         if sd in freq:
-            freq[sd][spanin.type_code] += 1
-        else:
             count += 1
+            freq[sd][spanin.type_code] += 1
+        # else:
+            # count += 1
             # freq[sd] = {'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0}
             # freq[sd][spanin.type_code] += 1
 
@@ -111,17 +113,23 @@ def spanin_score(request):
 
     freq = {key:{'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0} for key in sds}
 
+    count = 0
     spanins = Spanin.objects.all()
     for spanin in spanins:
         sd = str(spanin.sd_sequence).strip()
         # flag for ignoring spanin
         if '*' in sd:
+            count += 1
             continue
         sd = sd.translate(None, string.ascii_lowercase)
         for key in sds:
             if sd in sds[key]:
+                count += 1
                 freq[key][spanin.type_code] += 1
 
+    print "*******"
+    print count
+    print "*******"
     return Response(freq)
 
 @api_view(['GET'])
@@ -130,12 +138,7 @@ def chord_plot(request):
     scores = {}
     phages = Phage.objects.all()
     for phage in phages:
-        # print '*******'
-        # print phage.spanin_type
-        # print request.query_params[]
-        # print '*******'
         if phage.spanin_type == int(request.query_params['type']):
-
             sc = str((phage.i_spanin.spanin_score(), phage.o_spanin.spanin_score()))
             if sc in scores:
                 scores[sc] += 1

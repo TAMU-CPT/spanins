@@ -1,0 +1,15 @@
+chr - 0o 0o 0 2 color0o
+chr - 8o 8o 0 10 color8o
+chr - 10o 10o 0 36 color10o
+chr - 11o 11o 0 19 color11o
+chr - 13o 13o 0 34 color13o
+chr - 14o 14o 0 4 color14o
+chr - 16o 16o 0 11 color16o
+chr - 18i 18i 0 6 color18i
+chr - 16i 16i 0 6 color16i
+chr - 14i 14i 0 1 color14i
+chr - 13i 13i 0 33 color13i
+chr - 11i 11i 0 22 color11i
+chr - 10i 10i 0 18 color10i
+chr - 8i 8i 0 26 color8i
+chr - 0i 0i 0 4 color0i

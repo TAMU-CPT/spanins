@@ -1,0 +1,843 @@
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 2 2
+scale atten_large 10 10
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 1 1
+scale atten_large 0 0
+scale atten_large 2 2
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 1 1
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 1 1
+scale atten_large 0 0
+scale atten_large 1 1
+scale atten_large 0 0
+scale atten_large 12 12
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 1 1
+scale atten_large 3 3
+scale atten_large 31 31
+scale atten_large 3 3
+scale atten_large 20 20
+scale atten_large 6 6
+scale atten_large 1 1
+scale atten_large 1 1
+scale atten_large 2 2
+scale atten_large 3 3
+scale atten_large 0 0
+scale atten_large 13 13
+scale atten_large 7 7
+scale atten_large 7 7
+scale atten_large 26 26
+scale atten_large 2 2
+scale atten_large 3 3
+scale atten_large 0 0
+scale atten_large 2 2
+scale atten_large 0 0
+scale atten_large 3 3
+scale atten_large 5 5
+scale atten_large 5 5
+scale atten_large 3 3
+scale atten_large 0 0
+scale atten_large 2 2
+scale atten_large 0 0
+scale atten_large 1 1
+scale atten_large 0 0
+scale atten_large 6 6
+scale atten_large 11 11
+scale atten_large 15 15
+scale atten_large 7 7
+scale atten_large 0 0
+scale atten_large 1 1
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 0 0
+scale atten_large 3 3
+scale atten_large 4 4
+scale atten_large 0 0
+scale atten_large 0 0
+hsvpercentile 0 0 1 1
+colorpercentile percentile00000 = 255,0,0
+hsvpercentile 5 15 1 1
+colorpercentile percentile00005 = 255,64,0
+hsvpercentile 10 30 1 1
+colorpercentile percentile00010 = 255,128,0
+hsvpercentile 15 45 1 1
+colorpercentile percentile00015 = 255,191,0
+hsvpercentile 20 60 1 1
+colorpercentile percentile00020 = 255,255,0
+hsvpercentile 25 75 1 1
+colorpercentile percentile00025 = 191,255,0
+hsvpercentile 30 90 1 1
+colorpercentile percentile00030 = 128,255,0
+hsvpercentile 35 105 1 1
+colorpercentile percentile00035 = 64,255,0
+hsvpercentile 40 120 1 1
+colorpercentile percentile00040 = 0,255,0
+hsvpercentile 45 135 1 1
+colorpercentile percentile00045 = 0,255,64
+hsvpercentile 50 150 1 1
+colorpercentile percentile00050 = 0,255,128
+hsvpercentile 55 165 1 1
+colorpercentile percentile00055 = 0,255,191
+hsvpercentile 60 180 1 1
+colorpercentile percentile00060 = 0,255,255
+hsvpercentile 65 195 1 1
+colorpercentile percentile00065 = 0,191,255
+hsvpercentile 70 210 1 1
+colorpercentile percentile00070 = 0,128,255
+hsvpercentile 75 225 1 1
+colorpercentile percentile00075 = 0,64,255
+hsvpercentile 80 240 1 1
+colorpercentile percentile00080 = 0,0,255
+hsvpercentile 85 255 1 1
+colorpercentile percentile00085 = 64,0,255
+hsvpercentile 90 270 1 1
+colorpercentile percentile00090 = 128,0,255
+hsvpercentile 95 285 1 1
+colorpercentile percentile00095 = 191,0,255
+hsvpercentile 100 300 1 1
+colorpercentile percentile00100 = 255,0,255
+table report row 0 18o 
+table report row 1 16o 
+table report row 2 14o 
+table report row 3 13o 
+table report row 4 11o 
+table report row 5 10o 
+table report row 6 8o 
+table report row 7 7o 
+table report row 8 0o 
+table report col 0 18i 
+table report col 1 16i 
+table report col 2 14i 
+table report col 3 13i 
+table report col 4 11i 
+table report col 5 10i 
+table report col 6 8i 
+table report col 7 7i 
+table report col 8 0i 
+table report cell 0 18o 0 18i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 0 18o 1 16i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 0 18o 2 14i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 0 18o 3 13i raw 2 cleaned/remapped 2* scaled 2 missing? 0 hidden? 0
+table report cell 0 18o 4 11i raw 10 cleaned/remapped 10* scaled 10 missing? 0 hidden? 0
+table report cell 0 18o 5 10i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 0 18o 6 8i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 0 18o 7 7i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 0 18o 8 0i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 1 16o 0 18i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 1 16o 1 16i raw 1 cleaned/remapped 1* scaled 1 missing? 0 hidden? 0
+table report cell 1 16o 2 14i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 1 16o 3 13i raw 2 cleaned/remapped 2* scaled 2 missing? 0 hidden? 0
+table report cell 1 16o 4 11i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 1 16o 5 10i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 1 16o 6 8i raw 1 cleaned/remapped 1* scaled 1 missing? 0 hidden? 0
+table report cell 1 16o 7 7i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 1 16o 8 0i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 2 14o 0 18i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 2 14o 1 16i raw 1 cleaned/remapped 1* scaled 1 missing? 0 hidden? 0
+table report cell 2 14o 2 14i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 2 14o 3 13i raw 1 cleaned/remapped 1* scaled 1 missing? 0 hidden? 0
+table report cell 2 14o 4 11i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 2 14o 5 10i raw 12 cleaned/remapped 12* scaled 12 missing? 0 hidden? 0
+table report cell 2 14o 6 8i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 2 14o 7 7i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 2 14o 8 0i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 3 13o 0 18i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 3 13o 1 16i raw 1 cleaned/remapped 1* scaled 1 missing? 0 hidden? 0
+table report cell 3 13o 2 14i raw 3 cleaned/remapped 3* scaled 3 missing? 0 hidden? 0
+table report cell 3 13o 3 13i raw 31 cleaned/remapped 31* scaled 31 missing? 0 hidden? 0
+table report cell 3 13o 4 11i raw 3 cleaned/remapped 3* scaled 3 missing? 0 hidden? 0
+table report cell 3 13o 5 10i raw 20 cleaned/remapped 20* scaled 20 missing? 0 hidden? 0
+table report cell 3 13o 6 8i raw 6 cleaned/remapped 6* scaled 6 missing? 0 hidden? 0
+table report cell 3 13o 7 7i raw 1 cleaned/remapped 1* scaled 1 missing? 0 hidden? 0
+table report cell 3 13o 8 0i raw 1 cleaned/remapped 1* scaled 1 missing? 0 hidden? 0
+table report cell 4 11o 0 18i raw 2 cleaned/remapped 2* scaled 2 missing? 0 hidden? 0
+table report cell 4 11o 1 16i raw 3 cleaned/remapped 3* scaled 3 missing? 0 hidden? 0
+table report cell 4 11o 2 14i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 4 11o 3 13i raw 13 cleaned/remapped 13* scaled 13 missing? 0 hidden? 0
+table report cell 4 11o 4 11i raw 7 cleaned/remapped 7* scaled 7 missing? 0 hidden? 0
+table report cell 4 11o 5 10i raw 7 cleaned/remapped 7* scaled 7 missing? 0 hidden? 0
+table report cell 4 11o 6 8i raw 26 cleaned/remapped 26* scaled 26 missing? 0 hidden? 0
+table report cell 4 11o 7 7i raw 2 cleaned/remapped 2* scaled 2 missing? 0 hidden? 0
+table report cell 4 11o 8 0i raw 3 cleaned/remapped 3* scaled 3 missing? 0 hidden? 0
+table report cell 5 10o 0 18i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 5 10o 1 16i raw 2 cleaned/remapped 2* scaled 2 missing? 0 hidden? 0
+table report cell 5 10o 2 14i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 5 10o 3 13i raw 3 cleaned/remapped 3* scaled 3 missing? 0 hidden? 0
+table report cell 5 10o 4 11i raw 5 cleaned/remapped 5* scaled 5 missing? 0 hidden? 0
+table report cell 5 10o 5 10i raw 5 cleaned/remapped 5* scaled 5 missing? 0 hidden? 0
+table report cell 5 10o 6 8i raw 3 cleaned/remapped 3* scaled 3 missing? 0 hidden? 0
+table report cell 5 10o 7 7i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 5 10o 8 0i raw 2 cleaned/remapped 2* scaled 2 missing? 0 hidden? 0
+table report cell 6 8o 0 18i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 6 8o 1 16i raw 1 cleaned/remapped 1* scaled 1 missing? 0 hidden? 0
+table report cell 6 8o 2 14i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 6 8o 3 13i raw 6 cleaned/remapped 6* scaled 6 missing? 0 hidden? 0
+table report cell 6 8o 4 11i raw 11 cleaned/remapped 11* scaled 11 missing? 0 hidden? 0
+table report cell 6 8o 5 10i raw 15 cleaned/remapped 15* scaled 15 missing? 0 hidden? 0
+table report cell 6 8o 6 8i raw 7 cleaned/remapped 7* scaled 7 missing? 0 hidden? 0
+table report cell 6 8o 7 7i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 6 8o 8 0i raw 1 cleaned/remapped 1* scaled 1 missing? 0 hidden? 0
+table report cell 7 7o 0 18i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 7 7o 1 16i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 7 7o 2 14i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 7 7o 3 13i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 7 7o 4 11i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 7 7o 5 10i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 7 7o 6 8i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 7 7o 7 7i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 7 7o 8 0i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 8 0o 0 18i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 8 0o 1 16i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 8 0o 2 14i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 8 0o 3 13i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 8 0o 4 11i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 8 0o 5 10i raw 3 cleaned/remapped 3* scaled 3 missing? 0 hidden? 0
+table report cell 8 0o 6 8i raw 4 cleaned/remapped 4* scaled 4 missing? 0 hidden? 0
+table report cell 8 0o 7 7i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+table report cell 8 0o 8 0i raw 0 cleaned/remapped 0* scaled 0 missing? 0 hidden? 0
+row/col/label stat row 0o sum 7 n 9 min 0 max 4 avg 0.777777777777778
+row/col/label stat row 10o sum 20 n 9 min 0 max 5 avg 2.22222222222222
+row/col/label stat row 11o sum 63 n 9 min 0 max 26 avg 7
+row/col/label stat row 13o sum 66 n 9 min 0 max 31 avg 7.33333333333333
+row/col/label stat row 14o sum 14 n 9 min 0 max 12 avg 1.55555555555556
+row/col/label stat row 16o sum 4 n 9 min 0 max 2 avg 0.444444444444444
+row/col/label stat row 18o sum 12 n 9 min 0 max 10 avg 1.33333333333333
+row/col/label stat row 7o sum 0 n 9 min 0 max 0 avg 0
+row/col/label stat row 8o sum 41 n 9 min 0 max 15 avg 4.55555555555556
+row/col/label stat col 0i sum 7 n 9 min 0 max 3 avg 0.777777777777778
+row/col/label stat col 10i sum 62 n 9 min 0 max 20 avg 6.88888888888889
+row/col/label stat col 11i sum 36 n 9 min 0 max 11 avg 4
+row/col/label stat col 13i sum 58 n 9 min 0 max 31 avg 6.44444444444444
+row/col/label stat col 14i sum 3 n 9 min 0 max 3 avg 0.333333333333333
+row/col/label stat col 16i sum 9 n 9 min 0 max 3 avg 1
+row/col/label stat col 18i sum 2 n 9 min 0 max 2 avg 0.222222222222222
+row/col/label stat col 7i sum 3 n 9 min 0 max 2 avg 0.333333333333333
+row/col/label stat col 8i sum 47 n 9 min 0 max 26 avg 5.22222222222222
+row/col/label stat label 0i sum 7 n 9 min 0 max 3 avg 0.777777777777778
+row/col/label stat label 0o sum 7 n 9 min 0 max 4 avg 0.777777777777778
+row/col/label stat label 10i sum 62 n 9 min 0 max 20 avg 6.88888888888889
+row/col/label stat label 10o sum 20 n 9 min 0 max 5 avg 2.22222222222222
+row/col/label stat label 11i sum 36 n 9 min 0 max 11 avg 4
+row/col/label stat label 11o sum 63 n 9 min 0 max 26 avg 7
+row/col/label stat label 13i sum 58 n 9 min 0 max 31 avg 6.44444444444444
+row/col/label stat label 13o sum 66 n 9 min 0 max 31 avg 7.33333333333333
+row/col/label stat label 14i sum 3 n 9 min 0 max 3 avg 0.333333333333333
+row/col/label stat label 14o sum 14 n 9 min 0 max 12 avg 1.55555555555556
+row/col/label stat label 16i sum 9 n 9 min 0 max 3 avg 1
+row/col/label stat label 16o sum 4 n 9 min 0 max 2 avg 0.444444444444444
+row/col/label stat label 18i sum 2 n 9 min 0 max 2 avg 0.222222222222222
+row/col/label stat label 18o sum 12 n 9 min 0 max 10 avg 1.33333333333333
+row/col/label stat label 7i sum 3 n 9 min 0 max 2 avg 0.333333333333333
+row/col/label stat label 7o sum 0 n 9 min 0 max 0 avg 0
+row/col/label stat label 8i sum 47 n 9 min 0 max 26 avg 5.22222222222222
+row/col/label stat label 8o sum 41 n 9 min 0 max 15 avg 4.55555555555556
+labels ordered 8o 8i 7o 7i 18o 18i 16o 16i 14o 14i 13o 13i 11o 11i 10o 10i 0o 0i
+label2seg 0 8o 8o
+label2seg 1 8i 8i
+label2seg 2 7o 7o
+label2seg 3 7i 7i
+label2seg 4 18o 18o
+label2seg 5 18i 18i
+label2seg 6 16o 16o
+label2seg 7 16i 16i
+label2seg 8 14o 14o
+label2seg 9 14i 14i
+label2seg 10 13o 13o
+label2seg 11 13i 13i
+label2seg 12 11o 11o
+label2seg 13 11i 11i
+label2seg 14 10o 10o
+label2seg 15 10i 10i
+label2seg 16 0o 0o
+label2seg 17 0i 0i
+labels ordered 0i 0o 10i 10o 11i 11o 13i 13o 14i 14o 16i 16o 18i 18o 7i 7o 8i 8o
+colordef color16i = 46,230,217
+colordef color8o = 230,46,230
+colordef color13i = 92,230,46
+colordef color0i = 230,46,46
+colordef color11o = 144,230,46
+colordef color14i = 46,230,110
+colordef color16o = 46,187,230
+colordef color14o = 46,230,162
+colordef color0o = 230,98,46
+colordef color10i = 230,153,46
+colordef color18i = 46,135,230
+colordef color11i = 199,230,46
+colordef color18o = 46,80,230
+colordef color7i = 67,46,230
+colordef color8i = 174,46,230
+colordef color7o = 119,46,230
+colordef color13o = 46,230,55
+colordef color10o = 230,205,46
+highlight row 16o 0 2 fill_color=color13i
+highlight row 16o 2 3 fill_color=color16i
+highlight row 16o 3 4 fill_color=color8i
+highlight row 16o 4 4 fill_color=color7i
+highlight row 16o 4 4 fill_color=color0i
+highlight row 16o 4 4 fill_color=color14i
+highlight row 16o 4 4 fill_color=color10i
+highlight row 16o 4 4 fill_color=color18i
+highlight row 16o 4 4 fill_color=color11i
+highlight row 8o 0 15 fill_color=color10i
+highlight row 8o 15 26 fill_color=color11i
+highlight row 8o 26 33 fill_color=color8i
+highlight row 8o 33 39 fill_color=color13i
+highlight row 8o 39 40 fill_color=color16i
+highlight row 8o 40 41 fill_color=color0i
+highlight row 8o 41 41 fill_color=color7i
+highlight row 8o 41 41 fill_color=color14i
+highlight row 8o 41 41 fill_color=color18i
+highlight row 7o 0 0 fill_color=color7i
+highlight row 7o 0 0 fill_color=color16i
+highlight row 7o 0 0 fill_color=color0i
+highlight row 7o 0 0 fill_color=color13i
+highlight row 7o 0 0 fill_color=color14i
+highlight row 7o 0 0 fill_color=color8i
+highlight row 7o 0 0 fill_color=color10i
+highlight row 7o 0 0 fill_color=color18i
+highlight row 7o 0 0 fill_color=color11i
+highlight row 14o 0 12 fill_color=color10i
+highlight row 14o 12 13 fill_color=color16i
+highlight row 14o 13 14 fill_color=color13i
+highlight row 14o 14 14 fill_color=color7i
+highlight row 14o 14 14 fill_color=color0i
+highlight row 14o 14 14 fill_color=color14i
+highlight row 14o 14 14 fill_color=color8i
+highlight row 14o 14 14 fill_color=color18i
+highlight row 14o 14 14 fill_color=color11i
+highlight row 0o 0 4 fill_color=color8i
+highlight row 0o 4 7 fill_color=color10i
+highlight row 0o 7 7 fill_color=color7i
+highlight row 0o 7 7 fill_color=color16i
+highlight row 0o 7 7 fill_color=color0i
+highlight row 0o 7 7 fill_color=color13i
+highlight row 0o 7 7 fill_color=color14i
+highlight row 0o 7 7 fill_color=color18i
+highlight row 0o 7 7 fill_color=color11i
+highlight row 11o 0 26 fill_color=color8i
+highlight row 11o 26 39 fill_color=color13i
+highlight row 11o 39 46 fill_color=color10i
+highlight row 11o 46 53 fill_color=color11i
+highlight row 11o 53 56 fill_color=color16i
+highlight row 11o 56 59 fill_color=color0i
+highlight row 11o 59 61 fill_color=color7i
+highlight row 11o 61 63 fill_color=color18i
+highlight row 11o 63 63 fill_color=color14i
+highlight row 13o 0 31 fill_color=color13i
+highlight row 13o 31 51 fill_color=color10i
+highlight row 13o 51 57 fill_color=color8i
+highlight row 13o 57 60 fill_color=color14i
+highlight row 13o 60 63 fill_color=color11i
+highlight row 13o 63 64 fill_color=color7i
+highlight row 13o 64 65 fill_color=color16i
+highlight row 13o 65 66 fill_color=color0i
+highlight row 13o 66 66 fill_color=color18i
+highlight row 10o 0 5 fill_color=color10i
+highlight row 10o 5 10 fill_color=color11i
+highlight row 10o 10 13 fill_color=color13i
+highlight row 10o 13 16 fill_color=color8i
+highlight row 10o 16 18 fill_color=color16i
+highlight row 10o 18 20 fill_color=color0i
+highlight row 10o 20 20 fill_color=color7i
+highlight row 10o 20 20 fill_color=color14i
+highlight row 10o 20 20 fill_color=color18i
+highlight row 18o 0 10 fill_color=color11i
+highlight row 18o 10 12 fill_color=color13i
+highlight row 18o 12 12 fill_color=color7i
+highlight row 18o 12 12 fill_color=color16i
+highlight row 18o 12 12 fill_color=color0i
+highlight row 18o 12 12 fill_color=color14i
+highlight row 18o 12 12 fill_color=color8i
+highlight row 18o 12 12 fill_color=color10i
+highlight row 18o 12 12 fill_color=color18i
+highlight col 16i 0 3 fill_color=color11o
+highlight col 16i 3 5 fill_color=color10o
+highlight col 16i 5 6 fill_color=color8o
+highlight col 16i 6 7 fill_color=color16o
+highlight col 16i 7 8 fill_color=color14o
+highlight col 16i 8 9 fill_color=color13o
+highlight col 16i 9 9 fill_color=color0o
+highlight col 16i 9 9 fill_color=color7o
+highlight col 16i 9 9 fill_color=color18o
+highlight col 7i 0 2 fill_color=color11o
+highlight col 7i 2 3 fill_color=color13o
+highlight col 7i 3 3 fill_color=color8o
+highlight col 7i 3 3 fill_color=color16o
+highlight col 7i 3 3 fill_color=color0o
+highlight col 7i 3 3 fill_color=color14o
+highlight col 7i 3 3 fill_color=color7o
+highlight col 7i 3 3 fill_color=color10o
+highlight col 7i 3 3 fill_color=color18o
+highlight col 13i 0 31 fill_color=color13o
+highlight col 13i 31 44 fill_color=color11o
+highlight col 13i 44 50 fill_color=color8o
+highlight col 13i 50 53 fill_color=color10o
+highlight col 13i 53 55 fill_color=color16o
+highlight col 13i 55 57 fill_color=color18o
+highlight col 13i 57 58 fill_color=color14o
+highlight col 13i 58 58 fill_color=color0o
+highlight col 13i 58 58 fill_color=color7o
+highlight col 0i 0 3 fill_color=color11o
+highlight col 0i 3 5 fill_color=color10o
+highlight col 0i 5 6 fill_color=color8o
+highlight col 0i 6 7 fill_color=color13o
+highlight col 0i 7 7 fill_color=color16o
+highlight col 0i 7 7 fill_color=color0o
+highlight col 0i 7 7 fill_color=color14o
+highlight col 0i 7 7 fill_color=color7o
+highlight col 0i 7 7 fill_color=color18o
+highlight col 8i 0 26 fill_color=color11o
+highlight col 8i 26 33 fill_color=color8o
+highlight col 8i 33 39 fill_color=color13o
+highlight col 8i 39 43 fill_color=color0o
+highlight col 8i 43 46 fill_color=color10o
+highlight col 8i 46 47 fill_color=color16o
+highlight col 8i 47 47 fill_color=color14o
+highlight col 8i 47 47 fill_color=color7o
+highlight col 8i 47 47 fill_color=color18o
+highlight col 10i 0 20 fill_color=color13o
+highlight col 10i 20 35 fill_color=color8o
+highlight col 10i 35 47 fill_color=color14o
+highlight col 10i 47 54 fill_color=color11o
+highlight col 10i 54 59 fill_color=color10o
+highlight col 10i 59 62 fill_color=color0o
+highlight col 10i 62 62 fill_color=color16o
+highlight col 10i 62 62 fill_color=color7o
+highlight col 10i 62 62 fill_color=color18o
+highlight col 18i 0 2 fill_color=color11o
+highlight col 18i 2 2 fill_color=color8o
+highlight col 18i 2 2 fill_color=color16o
+highlight col 18i 2 2 fill_color=color0o
+highlight col 18i 2 2 fill_color=color14o
+highlight col 18i 2 2 fill_color=color7o
+highlight col 18i 2 2 fill_color=color13o
+highlight col 18i 2 2 fill_color=color10o
+highlight col 18i 2 2 fill_color=color18o
+highlight col 11i 0 11 fill_color=color8o
+highlight col 11i 11 21 fill_color=color18o
+highlight col 11i 21 28 fill_color=color11o
+highlight col 11i 28 33 fill_color=color10o
+highlight col 11i 33 36 fill_color=color13o
+highlight col 11i 36 36 fill_color=color16o
+highlight col 11i 36 36 fill_color=color0o
+highlight col 11i 36 36 fill_color=color14o
+highlight col 11i 36 36 fill_color=color7o
+highlight col 14i 0 3 fill_color=color13o
+highlight col 14i 3 3 fill_color=color8o
+highlight col 14i 3 3 fill_color=color11o
+highlight col 14i 3 3 fill_color=color16o
+highlight col 14i 3 3 fill_color=color0o
+highlight col 14i 3 3 fill_color=color14o
+highlight col 14i 3 3 fill_color=color7o
+highlight col 14i 3 3 fill_color=color10o
+highlight col 14i 3 3 fill_color=color18o
+highlight all 8o 0 15 fill_color=color10i
+highlight all 8o 15 26 fill_color=color11i
+highlight all 8o 26 33 fill_color=color8i
+highlight all 8o 33 39 fill_color=color13i
+highlight all 8o 39 40 fill_color=color16i
+highlight all 8o 40 41 fill_color=color0i
+highlight all 8o 41 41 fill_color=color7i
+highlight all 8o 41 41 fill_color=color14i
+highlight all 8o 41 41 fill_color=color18i
+highlight all 8i 0 26 fill_color=color11o
+highlight all 8i 26 33 fill_color=color8o
+highlight all 8i 33 39 fill_color=color13o
+highlight all 8i 39 43 fill_color=color0o
+highlight all 8i 43 46 fill_color=color10o
+highlight all 8i 46 47 fill_color=color16o
+highlight all 8i 47 47 fill_color=color7o
+highlight all 8i 47 47 fill_color=color14o
+highlight all 8i 47 47 fill_color=color18o
+highlight all 7o 0 0 fill_color=color7i
+highlight all 7o 0 0 fill_color=color16i
+highlight all 7o 0 0 fill_color=color0i
+highlight all 7o 0 0 fill_color=color13i
+highlight all 7o 0 0 fill_color=color14i
+highlight all 7o 0 0 fill_color=color8i
+highlight all 7o 0 0 fill_color=color10i
+highlight all 7o 0 0 fill_color=color18i
+highlight all 7o 0 0 fill_color=color11i
+highlight all 7i 0 2 fill_color=color11o
+highlight all 7i 2 3 fill_color=color13o
+highlight all 7i 3 3 fill_color=color8o
+highlight all 7i 3 3 fill_color=color16o
+highlight all 7i 3 3 fill_color=color0o
+highlight all 7i 3 3 fill_color=color7o
+highlight all 7i 3 3 fill_color=color14o
+highlight all 7i 3 3 fill_color=color10o
+highlight all 7i 3 3 fill_color=color18o
+highlight all 18o 0 10 fill_color=color11i
+highlight all 18o 10 12 fill_color=color13i
+highlight all 18o 12 12 fill_color=color7i
+highlight all 18o 12 12 fill_color=color16i
+highlight all 18o 12 12 fill_color=color0i
+highlight all 18o 12 12 fill_color=color14i
+highlight all 18o 12 12 fill_color=color8i
+highlight all 18o 12 12 fill_color=color10i
+highlight all 18o 12 12 fill_color=color18i
+highlight all 18i 0 2 fill_color=color11o
+highlight all 18i 2 2 fill_color=color8o
+highlight all 18i 2 2 fill_color=color16o
+highlight all 18i 2 2 fill_color=color0o
+highlight all 18i 2 2 fill_color=color7o
+highlight all 18i 2 2 fill_color=color14o
+highlight all 18i 2 2 fill_color=color13o
+highlight all 18i 2 2 fill_color=color10o
+highlight all 18i 2 2 fill_color=color18o
+highlight all 16o 0 2 fill_color=color13i
+highlight all 16o 2 3 fill_color=color16i
+highlight all 16o 3 4 fill_color=color8i
+highlight all 16o 4 4 fill_color=color7i
+highlight all 16o 4 4 fill_color=color0i
+highlight all 16o 4 4 fill_color=color14i
+highlight all 16o 4 4 fill_color=color10i
+highlight all 16o 4 4 fill_color=color18i
+highlight all 16o 4 4 fill_color=color11i
+highlight all 16i 0 3 fill_color=color11o
+highlight all 16i 3 5 fill_color=color10o
+highlight all 16i 5 6 fill_color=color8o
+highlight all 16i 6 7 fill_color=color16o
+highlight all 16i 7 8 fill_color=color14o
+highlight all 16i 8 9 fill_color=color13o
+highlight all 16i 9 9 fill_color=color0o
+highlight all 16i 9 9 fill_color=color7o
+highlight all 16i 9 9 fill_color=color18o
+highlight all 14o 0 12 fill_color=color10i
+highlight all 14o 12 13 fill_color=color16i
+highlight all 14o 13 14 fill_color=color13i
+highlight all 14o 14 14 fill_color=color7i
+highlight all 14o 14 14 fill_color=color0i
+highlight all 14o 14 14 fill_color=color14i
+highlight all 14o 14 14 fill_color=color8i
+highlight all 14o 14 14 fill_color=color18i
+highlight all 14o 14 14 fill_color=color11i
+highlight all 14i 0 3 fill_color=color13o
+highlight all 14i 3 3 fill_color=color8o
+highlight all 14i 3 3 fill_color=color11o
+highlight all 14i 3 3 fill_color=color16o
+highlight all 14i 3 3 fill_color=color0o
+highlight all 14i 3 3 fill_color=color7o
+highlight all 14i 3 3 fill_color=color14o
+highlight all 14i 3 3 fill_color=color10o
+highlight all 14i 3 3 fill_color=color18o
+highlight all 13o 0 31 fill_color=color13i
+highlight all 13o 31 51 fill_color=color10i
+highlight all 13o 51 57 fill_color=color8i
+highlight all 13o 57 60 fill_color=color14i
+highlight all 13o 60 63 fill_color=color11i
+highlight all 13o 63 64 fill_color=color7i
+highlight all 13o 64 65 fill_color=color16i
+highlight all 13o 65 66 fill_color=color0i
+highlight all 13o 66 66 fill_color=color18i
+highlight all 13i 0 31 fill_color=color13o
+highlight all 13i 31 44 fill_color=color11o
+highlight all 13i 44 50 fill_color=color8o
+highlight all 13i 50 53 fill_color=color10o
+highlight all 13i 53 55 fill_color=color16o
+highlight all 13i 55 57 fill_color=color18o
+highlight all 13i 57 58 fill_color=color14o
+highlight all 13i 58 58 fill_color=color0o
+highlight all 13i 58 58 fill_color=color7o
+highlight all 11o 0 26 fill_color=color8i
+highlight all 11o 26 39 fill_color=color13i
+highlight all 11o 39 46 fill_color=color10i
+highlight all 11o 46 53 fill_color=color11i
+highlight all 11o 53 56 fill_color=color16i
+highlight all 11o 56 59 fill_color=color0i
+highlight all 11o 59 61 fill_color=color7i
+highlight all 11o 61 63 fill_color=color18i
+highlight all 11o 63 63 fill_color=color14i
+highlight all 11i 0 11 fill_color=color8o
+highlight all 11i 11 21 fill_color=color18o
+highlight all 11i 21 28 fill_color=color11o
+highlight all 11i 28 33 fill_color=color10o
+highlight all 11i 33 36 fill_color=color13o
+highlight all 11i 36 36 fill_color=color16o
+highlight all 11i 36 36 fill_color=color0o
+highlight all 11i 36 36 fill_color=color7o
+highlight all 11i 36 36 fill_color=color14o
+highlight all 10o 0 5 fill_color=color10i
+highlight all 10o 5 10 fill_color=color11i
+highlight all 10o 10 13 fill_color=color13i
+highlight all 10o 13 16 fill_color=color8i
+highlight all 10o 16 18 fill_color=color16i
+highlight all 10o 18 20 fill_color=color0i
+highlight all 10o 20 20 fill_color=color7i
+highlight all 10o 20 20 fill_color=color14i
+highlight all 10o 20 20 fill_color=color18i
+highlight all 10i 0 20 fill_color=color13o
+highlight all 10i 20 35 fill_color=color8o
+highlight all 10i 35 47 fill_color=color14o
+highlight all 10i 47 54 fill_color=color11o
+highlight all 10i 54 59 fill_color=color10o
+highlight all 10i 59 62 fill_color=color0o
+highlight all 10i 62 62 fill_color=color16o
+highlight all 10i 62 62 fill_color=color7o
+highlight all 10i 62 62 fill_color=color18o
+highlight all 0o 0 4 fill_color=color8i
+highlight all 0o 4 7 fill_color=color10i
+highlight all 0o 7 7 fill_color=color7i
+highlight all 0o 7 7 fill_color=color16i
+highlight all 0o 7 7 fill_color=color0i
+highlight all 0o 7 7 fill_color=color13i
+highlight all 0o 7 7 fill_color=color14i
+highlight all 0o 7 7 fill_color=color18i
+highlight all 0o 7 7 fill_color=color11i
+highlight all 0i 0 3 fill_color=color11o
+highlight all 0i 3 5 fill_color=color10o
+highlight all 0i 5 6 fill_color=color8o
+highlight all 0i 6 7 fill_color=color13o
+highlight all 0i 7 7 fill_color=color16o
+highlight all 0i 7 7 fill_color=color0o
+highlight all 0i 7 7 fill_color=color7o
+highlight all 0i 7 7 fill_color=color14o
+highlight all 0i 7 7 fill_color=color18o
+karyotype chr - 8o 8o 0 41 color8o
+segmentlabel 8o 0 41 8o
+karyotype chr - 8i 8i 0 47 color8i
+segmentlabel 8i 0 47 8i
+karyotype chr - 7i 7i 0 3 color7i
+segmentlabel 7i 0 3 7i
+karyotype chr - 18o 18o 0 12 color18o
+segmentlabel 18o 0 12 18o
+karyotype chr - 18i 18i 0 2 color18i
+segmentlabel 18i 0 2 18i
+karyotype chr - 16o 16o 0 4 color16o
+segmentlabel 16o 0 4 16o
+karyotype chr - 16i 16i 0 9 color16i
+segmentlabel 16i 0 9 16i
+karyotype chr - 14o 14o 0 14 color14o
+segmentlabel 14o 0 14 14o
+karyotype chr - 14i 14i 0 3 color14i
+segmentlabel 14i 0 3 14i
+karyotype chr - 13o 13o 0 66 color13o
+segmentlabel 13o 0 66 13o
+karyotype chr - 13i 13i 0 58 color13i
+segmentlabel 13i 0 58 13i
+karyotype chr - 11o 11o 0 63 color11o
+segmentlabel 11o 0 63 11o
+karyotype chr - 11i 11i 0 36 color11i
+segmentlabel 11i 0 36 11i
+karyotype chr - 10o 10o 0 20 color10o
+segmentlabel 10o 0 20 10o
+karyotype chr - 10i 10i 0 62 color10i
+segmentlabel 10i 0 62 10i
+karyotype chr - 0o 0o 0 7 color0o
+segmentlabel 0o 0 7 0o
+karyotype chr - 0i 0i 0 7 color0i
+segmentlabel 0i 0 7 0i
+chromosomes_scale = 8o:1.0000,8i:1.0000,7o:1.0000,7i:1.0000,18o:1.0000,18i:1.0000,16o:1.0000,16i:1.0000,14o:1.0000,14i:1.0000,13o:1.0000,13i:1.0000,11o:1.0000,11i:1.0000,10o:1.0000,10i:1.0000,0o:1.0000,0i:1.0000
+loop 8o row
+loop 8o col
+loop 8i row
+loop 8i col
+loop 7o row
+loop 7o col
+loop 7i row
+loop 7i col
+loop 18o row
+loop 18o col
+loop 18i row
+loop 18i col
+loop 16o row
+loop 16o col
+loop 16i row
+loop 16i col
+loop 14o row
+loop 14o col
+loop 14i row
+loop 14i col
+loop 13o row
+loop 13o col
+loop 13i row
+loop 13i col
+loop 11o row
+loop 11o col
+loop 11i row
+loop 11i col
+loop 10o row
+loop 10o col
+loop 10i row
+loop 10i col
+loop 0o row
+loop 0o col
+loop 0i row
+loop 0i col
+link cell_0000 18o 10 12 color=color18o_a1,z=6
+link cell_0000 13i 50 52 color=color18o_a1,z=6
+colribboncap 13i 50 52 fill_color=color18o
+rowribboncap 18o 10 12 fill_color=color13i
+link cell_0001 18o 0 10 color=color18o_a1,z=32
+link cell_0001 11i 15 25 color=color18o_a1,z=32
+colribboncap 11i 15 25 fill_color=color18o
+rowribboncap 18o 0 10 fill_color=color11i
+link cell_0002 16o 2 3 color=color16o_a1,z=3
+link cell_0002 16i 7 8 color=color16o_a1,z=3
+colribboncap 16i 7 8 fill_color=color16o
+rowribboncap 16o 2 3 fill_color=color16i
+link cell_0003 16o 0 2 color=color16o_a1,z=6
+link cell_0003 13i 48 50 color=color16o_a1,z=6
+colribboncap 13i 48 50 fill_color=color16o
+rowribboncap 16o 0 2 fill_color=color13i
+link cell_0004 16o 3 4 color=color16o_a1,z=3
+link cell_0004 8i 39 40 color=color16o_a1,z=3
+colribboncap 8i 39 40 fill_color=color16o
+rowribboncap 16o 3 4 fill_color=color8i
+link cell_0005 14o 13 14 color=color14o_a1,z=3
+link cell_0005 16i 6 7 color=color14o_a1,z=3
+colribboncap 16i 6 7 fill_color=color14o
+rowribboncap 14o 13 14 fill_color=color16i
+link cell_0006 14o 12 13 color=color14o_a1,z=3
+link cell_0006 13i 47 48 color=color14o_a1,z=3
+colribboncap 13i 47 48 fill_color=color14o
+rowribboncap 14o 12 13 fill_color=color13i
+link cell_0007 14o 0 12 color=color14o_a1,z=39
+link cell_0007 10i 35 47 color=color14o_a1,z=39
+colribboncap 10i 35 47 fill_color=color14o
+rowribboncap 14o 0 12 fill_color=color10i
+link cell_0008 13o 58 59 color=color13o_a1,z=3
+link cell_0008 16i 5 6 color=color13o_a1,z=3
+colribboncap 16i 5 6 fill_color=color13o
+rowribboncap 13o 58 59 fill_color=color16i
+link cell_0009 13o 55 58 color=color13o_a1,z=10
+link cell_0009 14i 0 3 color=color13o_a1,z=10
+colribboncap 14i 0 3 fill_color=color13o
+rowribboncap 13o 55 58 fill_color=color14i
+link cell_0010 13o 24 55 color=color13o_a1,z=100
+link cell_0010 13i 16 47 color=color13o_a1,z=100
+colribboncap 13i 16 47 fill_color=color13o
+rowribboncap 13o 24 55 fill_color=color13i
+link cell_0011 13o 21 24 color=color13o_a1,z=10
+link cell_0011 11i 12 15 color=color13o_a1,z=10
+colribboncap 11i 12 15 fill_color=color13o
+rowribboncap 13o 21 24 fill_color=color11i
+link cell_0012 13o 1 21 color=color13o_a1,z=65
+link cell_0012 10i 15 35 color=color13o_a1,z=65
+colribboncap 10i 15 35 fill_color=color13o
+rowribboncap 13o 1 21 fill_color=color10i
+link cell_0013 13o 60 66 color=color13o_a1,z=19
+link cell_0013 8i 33 39 color=color13o_a1,z=19
+colribboncap 8i 33 39 fill_color=color13o
+rowribboncap 13o 60 66 fill_color=color8i
+link cell_0014 13o 59 60 color=color13o_a1,z=3
+link cell_0014 7i 2 3 color=color13o_a1,z=3
+colribboncap 7i 2 3 fill_color=color13o
+rowribboncap 13o 59 60 fill_color=color7i
+link cell_0015 13o 0 1 color=color13o_a1,z=3
+link cell_0015 0i 5 6 color=color13o_a1,z=3
+colribboncap 0i 5 6 fill_color=color13o
+rowribboncap 13o 0 1 fill_color=color0i
+link cell_0016 11o 33 35 color=color11o_a1,z=6
+link cell_0016 18i 0 2 color=color11o_a1,z=6
+colribboncap 18i 0 2 fill_color=color11o
+rowribboncap 11o 33 35 fill_color=color18i
+link cell_0017 11o 30 33 color=color11o_a1,z=10
+link cell_0017 16i 2 5 color=color11o_a1,z=10
+colribboncap 16i 2 5 fill_color=color11o
+rowribboncap 11o 30 33 fill_color=color16i
+link cell_0018 11o 17 30 color=color11o_a1,z=42
+link cell_0018 13i 3 16 color=color11o_a1,z=42
+colribboncap 13i 3 16 fill_color=color11o
+rowribboncap 11o 17 30 fill_color=color13i
+link cell_0019 11o 10 17 color=color11o_a1,z=23
+link cell_0019 11i 5 12 color=color11o_a1,z=23
+colribboncap 11i 5 12 fill_color=color11o
+rowribboncap 11o 10 17 fill_color=color11i
+link cell_0020 11o 3 10 color=color11o_a1,z=23
+link cell_0020 10i 8 15 color=color11o_a1,z=23
+colribboncap 10i 8 15 fill_color=color11o
+rowribboncap 11o 3 10 fill_color=color10i
+link cell_0021 11o 37 63 color=color11o_a1,z=84
+link cell_0021 8i 7 33 color=color11o_a1,z=84
+colribboncap 8i 7 33 fill_color=color11o
+rowribboncap 11o 37 63 fill_color=color8i
+link cell_0022 11o 35 37 color=color11o_a1,z=6
+link cell_0022 7i 0 2 color=color11o_a1,z=6
+colribboncap 7i 0 2 fill_color=color11o
+rowribboncap 11o 35 37 fill_color=color7i
+link cell_0023 11o 0 3 color=color11o_a1,z=10
+link cell_0023 0i 2 5 color=color11o_a1,z=10
+colribboncap 0i 2 5 fill_color=color11o
+rowribboncap 11o 0 3 fill_color=color0i
+link cell_0024 10o 15 17 color=color10o_a1,z=6
+link cell_0024 16i 0 2 color=color10o_a1,z=6
+colribboncap 16i 0 2 fill_color=color10o
+rowribboncap 10o 15 17 fill_color=color16i
+link cell_0025 10o 12 15 color=color10o_a1,z=10
+link cell_0025 13i 0 3 color=color10o_a1,z=10
+colribboncap 13i 0 3 fill_color=color10o
+rowribboncap 10o 12 15 fill_color=color13i
+link cell_0026 10o 7 12 color=color10o_a1,z=16
+link cell_0026 11i 0 5 color=color10o_a1,z=16
+colribboncap 11i 0 5 fill_color=color10o
+rowribboncap 10o 7 12 fill_color=color11i
+link cell_0027 10o 2 7 color=color10o_a1,z=16
+link cell_0027 10i 3 8 color=color10o_a1,z=16
+colribboncap 10i 3 8 fill_color=color10o
+rowribboncap 10o 2 7 fill_color=color10i
+link cell_0028 10o 17 20 color=color10o_a1,z=10
+link cell_0028 8i 4 7 color=color10o_a1,z=10
+colribboncap 8i 4 7 fill_color=color10o
+rowribboncap 10o 17 20 fill_color=color8i
+link cell_0029 10o 0 2 color=color10o_a1,z=6
+link cell_0029 0i 0 2 color=color10o_a1,z=6
+colribboncap 0i 0 2 fill_color=color10o
+rowribboncap 10o 0 2 fill_color=color0i
+link cell_0030 8o 33 34 color=color8o_a1,z=3
+link cell_0030 16i 8 9 color=color8o_a1,z=3
+colribboncap 16i 8 9 fill_color=color8o
+rowribboncap 8o 33 34 fill_color=color16i
+link cell_0031 8o 27 33 color=color8o_a1,z=19
+link cell_0031 13i 52 58 color=color8o_a1,z=19
+colribboncap 13i 52 58 fill_color=color8o
+rowribboncap 8o 27 33 fill_color=color13i
+link cell_0032 8o 16 27 color=color8o_a1,z=35
+link cell_0032 11i 25 36 color=color8o_a1,z=35
+colribboncap 11i 25 36 fill_color=color8o
+rowribboncap 8o 16 27 fill_color=color11i
+link cell_0033 8o 1 16 color=color8o_a1,z=48
+link cell_0033 10i 47 62 color=color8o_a1,z=48
+colribboncap 10i 47 62 fill_color=color8o
+rowribboncap 8o 1 16 fill_color=color10i
+link cell_0034 8o 34 41 color=color8o_a1,z=23
+link cell_0034 8i 40 47 color=color8o_a1,z=23
+colribboncap 8i 40 47 fill_color=color8o
+rowribboncap 8o 34 41 fill_color=color8i
+link cell_0035 8o 0 1 color=color8o_a1,z=3
+link cell_0035 0i 6 7 color=color8o_a1,z=3
+colribboncap 0i 6 7 fill_color=color8o
+rowribboncap 8o 0 1 fill_color=color0i
+link cell_0036 0o 0 3 color=color0o_a1,z=10
+link cell_0036 10i 0 3 color=color0o_a1,z=10
+colribboncap 10i 0 3 fill_color=color0o
+rowribboncap 0o 0 3 fill_color=color10i
+link cell_0037 0o 3 7 color=color0o_a1,z=13
+link cell_0037 8i 0 4 color=color0o_a1,z=13
+colribboncap 8i 0 4 fill_color=color0o
+rowribboncap 0o 3 7 fill_color=color8i

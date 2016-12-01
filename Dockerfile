@@ -18,7 +18,7 @@ ENV DJANGO_SETTINGS_MODULE=spanins.production \
 # Fix permissions on folder while still root, and collect static files for use
 # if need be.
 RUN python manage.py collectstatic --noinput && \
-	python manage.py rebuild_index && \
+	python manage.py rebuild_index --noinput && \
 	chown -R django /app
 
 # Drop permissions

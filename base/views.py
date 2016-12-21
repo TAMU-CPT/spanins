@@ -7,6 +7,7 @@ from rest_framework.decorators import api_view, renderer_classes
 from rest_framework.response import Response
 from base.models import Host, Spanin, Phage
 from base.serializers import HostSerializer, SpaninSerializer, PhageSerializer
+import os
 
 class HostViewSet(viewsets.ModelViewSet):
     queryset = Host.objects.all()
@@ -37,6 +38,18 @@ class PhageViewSet(viewsets.ModelViewSet):
                 queryset = SearchQuerySet().autocomplete(text=search).order_by('name')
             queryset = [p.object for p in queryset]
         return queryset
+
+def phage_name(obj):
+    if obj.i_spanin.all().count():
+        return obj.i_spanin.all()[0].name
+    elif obj.o_spanin.all().count():
+        return obj.o_spanin.all()[0].name
+    elif obj.u_spanin.all().count():
+        return obj.u_spanin.all()[0].name
+
+keep = []
+with open(os.path.realpath('spanin_names.txt'), 'r') as handle:
+    keep = [h.strip() for h in handle.read().split('\n') if h.strip()]
 
 @api_view(['GET'])
 @renderer_classes((JSONRenderer,))
@@ -80,12 +93,13 @@ def spanin_freq(request):
         sd = str(spanin.sd_sequence).strip()
         # flag for ignoring spanin
         if '*' in sd:
-            count += 1
+            # count += 1
             continue
-        sd = sd.translate(None, string.ascii_lowercase)
-        if sd in freq:
-            count += 1
-            freq[sd][spanin.type_code] += 1
+        if phage_name(spanin) in keep:
+            sd = sd.translate(None, string.ascii_lowercase)
+            if sd in freq:
+                count += 1
+                freq[sd][spanin.type_code] += 1
         # else:
             # count += 1
             # freq[sd] = {'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0}
@@ -119,13 +133,14 @@ def spanin_score(request):
         sd = str(spanin.sd_sequence).strip()
         # flag for ignoring spanin
         if '*' in sd:
-            count += 1
+            # count += 1
             continue
-        sd = sd.translate(None, string.ascii_lowercase)
-        for key in sds:
-            if sd in sds[key]:
-                count += 1
-                freq[key][spanin.type_code] += 1
+        if phage_name(spanin) in keep:
+            sd = sd.translate(None, string.ascii_lowercase)
+            for key in sds:
+                if sd in sds[key]:
+                    count += 1
+                    freq[key][spanin.type_code] += 1
 
     print "*******"
     print count
@@ -138,11 +153,12 @@ def chord_plot(request):
     scores = {}
     phages = Phage.objects.all()
     for phage in phages:
-        if phage.spanin_type == int(request.query_params['type']):
-            sc = str((phage.i_spanin.spanin_score(), phage.o_spanin.spanin_score()))
-            if sc in scores:
-                scores[sc] += 1
-            else:
-                scores[sc] = 1
+        if phage.name in keep:
+            if phage.spanin_type == int(request.query_params['type']):
+                sc = str((phage.i_spanin.spanin_score(), phage.o_spanin.spanin_score()))
+                if sc in scores:
+                    scores[sc] += 1
+                else:
+                    scores[sc] = 1
 
     return Response(scores)

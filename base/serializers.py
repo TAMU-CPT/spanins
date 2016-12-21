@@ -6,10 +6,25 @@ class HostSerializer(serializers.HyperlinkedModelSerializer):
         model = Host
         fields = ('id', 'name')
 
+class BasicPhageSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Phage
+        fields = ('name',)
+
+
 class SpaninSerializer(serializers.HyperlinkedModelSerializer):
+    phage_name=serializers.SerializerMethodField()
     class Meta:
         model = Spanin
-        fields = ('id', 'sequence', 'gene_name', 'accession', 'type_code', 'score')
+        fields = ('id', 'sequence', 'gene_name', 'accession', 'type_code', 'score', 'phage_name')
+
+    def get_phage_name(self, obj):
+        if obj.i_spanin.all().count():
+            return obj.i_spanin.all()[0].name
+        elif obj.o_spanin.all().count():
+            return obj.o_spanin.all()[0].name
+        elif obj.u_spanin.all().count():
+            return obj.u_spanin.all()[0].name
 
 class PhageSerializer(serializers.HyperlinkedModelSerializer):
     host=HostSerializer(read_only=True, allow_null=True)

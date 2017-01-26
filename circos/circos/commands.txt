@@ -1,0 +1,1 @@
+docker run -it -v $(pwd)/circos:/input erasche/circos:latest -conf /input/etc/circos.conf

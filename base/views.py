@@ -77,6 +77,7 @@ def spanin_freq(request):
            'AGGT',    #10
            'AGGA',    #10
            'GGGG',    #10
+           # 'GGGT',    #10
            'GGT',     #8
            'AGG',     #8
            'GAG',     #8
@@ -105,9 +106,9 @@ def spanin_freq(request):
             # freq[sd] = {'eis':0, 'eos':0, 'ois':0, 'oos':0, 'sis':0, 'sos':0, 'us':0}
             # freq[sd][spanin.type_code] += 1
 
-    print "*******"
-    print count
-    print "*******"
+    # print "*******"
+    # print count
+    # print "*******"
     return Response(freq)
 
 @api_view(['GET'])
@@ -120,6 +121,7 @@ def spanin_score(request):
         13: ['GGGGG', 'GAGGT', 'AGGAG'],
         11: ['GAGG', 'GGAG'],
         10: ['AGGT', 'AGGA', 'GGGG'],
+        # 9: ['GGGT'],
         8: ['GGT', 'AGG', 'GAG', 'GGA'],
         7: ['GGG'],
         0: [''],
@@ -142,9 +144,6 @@ def spanin_score(request):
                     count += 1
                     freq[key][spanin.type_code] += 1
 
-    print "*******"
-    print count
-    print "*******"
     return Response(freq)
 
 @api_view(['GET'])

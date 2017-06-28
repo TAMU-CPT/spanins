@@ -53,7 +53,7 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     # 'DEFAULT_PAGINATION_CLASS': 'my_project.apps.core.pagination.CustomPagination',
-    'PAGE_SIZE': 100
+    'PAGE_SIZE': 25
 }
 
 MIDDLEWARE = [
